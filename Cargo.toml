@@ -3,4 +3,5 @@
 members = [
     "hello_rust" ,
     "dyn_hello" ,
+    "variables" ,
 ]
