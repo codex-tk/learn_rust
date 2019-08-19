@@ -6,4 +6,7 @@ members = [
     "variables" ,
     "owner" ,
     "structs" ,
+    "communicator" ,
+    "collections" , 
+    "handle_error" ,
 ]
