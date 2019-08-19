@@ -4,4 +4,6 @@ members = [
     "hello_rust" ,
     "dyn_hello" ,
     "variables" ,
+    "owner" ,
+    "structs" ,
 ]
