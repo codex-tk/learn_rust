@@ -10,4 +10,6 @@ members = [
     "collections" , 
     "handle_error" ,
     "gtl",
+    "adder",
+    "greprs",
 ]
