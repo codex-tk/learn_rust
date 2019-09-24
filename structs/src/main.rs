@@ -21,6 +21,12 @@ enum IpAddrKind{
     V6(String),
 }
 
+#[repr(C)]
+struct buf{
+    ptr: i32,
+    size: i32,
+}
+
 fn main() {
     let user1 = User{
         username: String::from("name"),
@@ -53,7 +59,12 @@ fn main() {
     };
 
     let option_value = None;//Some(5);
-
+    let some_fn = Some;
+    let some_value = some_fn(4);
+    match some_value {
+        Some(v) => println!("{} ", v ),
+        None =>{},
+    };
     let v = match option_value {
         Some(v) => v,
         None => 0,

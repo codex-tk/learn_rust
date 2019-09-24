@@ -10,7 +10,7 @@ pub struct Config {
 }
 
 impl Config {
-    pub fn from_args(args: Vec<String>) -> Result<Config,&'static str> {
+    pub fn from_args(args: &[String] ) -> Result<Config,&'static str> {
         if args.len() < 3 {
             return Err("not enough arguments");
         }
@@ -22,11 +22,12 @@ impl Config {
 }
 
 
-pub fn run(config: Config){
-    let mut f = File::open(config.filename).expect("File Error");
+pub fn run(config: Config) -> Result<(),Box<Error>>{
+    let mut f = File::open(config.filename)?;
     let mut contents = String::new();
 
-    f.read_to_string(&mut contents).expect("Error Read");
+    f.read_to_string(&mut contents)?;
 
     println!("{}", contents );
+    Ok(())
 }

@@ -12,4 +12,6 @@ members = [
     "gtl",
     "adder",
     "greprs",
+    "how_r_u_rust",
+    "drop_test",
 ]
