@@ -69,5 +69,5 @@ fn test_internal_crate(){
 
 fn cast(){
     let s = String::from("s: &String");
-    let i = s as u32;
+    //let i = s as u32;
 }
